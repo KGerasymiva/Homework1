@@ -13,5 +13,9 @@ namespace ConsoleApp1
         public string Name { get; set; }
         public bool IsComplete { get; set; }
         public int UserId { get; set; }
+        public override string ToString()
+        {
+            return ($"Id: {Id} CreatedAt:{CreatedAt} Name:{Name} IsComplete:{IsComplete} UserID:{UserId}");
+        }
     }
 }

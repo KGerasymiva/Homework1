@@ -14,5 +14,14 @@ namespace ConsoleApp1
         public string Body { get; set; }
         public int UserId { get; set; }
         public int Likes { get; set; }
+
+        public IEnumerable<Comment> Comments { get; set; }=new List<Comment>();
+
+        public override string ToString()
+        {
+            return ($"Id: {Id} | Created at: {CreatedAt} | Title: {Title}| Body: {Body} | UserId: {UserId} | Likes {Likes}");
+
+        }
+
     }
 }

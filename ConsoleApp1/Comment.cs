@@ -14,5 +14,10 @@ namespace ConsoleApp1
         public int UserId { get; set; }
         public int PostId { get; set; }
         public int Likes { get; set; }
+        public override string ToString()
+        {
+            return ($"Id: {Id} | Created at: {CreatedAt} | Body: {Body} | UserId: {UserId} | PostId {PostId} | Likes {Likes}");
+
+        }
     }
 }
